@@ -1,0 +1,22 @@
+---
+abstract: "[One line description of module's purpose here]"
+author:
+  - 'meru_akimbo <merukatoruayu0@gmail.com>'
+build_requires: {}
+dynamic_config: 0
+generated_by: 'Module::Build version 0.4205, CPAN::Meta::Converter version 2.120921'
+license: artistic_2
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Amon2-Plugin-Redis
+provides:
+  Amon2::Plugin::Redis:
+    file: lib/Amon2/Plugin/Redis.pm
+    version: v0.0.3
+requires:
+  Test::More: 0
+  version: 0
+resources:
+  license: http://opensource.org/licenses/artistic-license-2.0.php
+version: v0.0.3
