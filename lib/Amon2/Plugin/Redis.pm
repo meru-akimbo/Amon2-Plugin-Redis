@@ -3,8 +3,30 @@ package Amon2::Plugin::Redis;
 use warnings;
 use strict;
 use Carp;
+use Redis;
+use Amon2::Utill;
 
 use version; $VERSION = qv('0.0.3');
+
+sub init {
+    my ($self, $c) = @_;
+
+    Amon2::Utill::add_method(
+        $c,
+        'redis',
+        __PACKAGE__->redis($c),
+    );
+}
+
+sub redis {
+    my ($class, $c) = @_;
+
+    if (!exists $c->{redis}) {
+        $c->{redis} = Redis->new($c->{redis});
+    }
+    $c->{redis};
+}
+
 
 # Other recommended modules (uncomment to use):
 #  use IO::Prompt;
@@ -37,8 +59,8 @@ This document describes Amon2::Plugin::Redis version 0.0.1
     Brief code example(s) here showing commonest usage(s).
     This section will be as far as many users bother reading
     so make it as educational and exeplary as possible.
-  
-  
+
+
 =head1 DESCRIPTION
 
 =for author to fill in:
@@ -46,7 +68,7 @@ This document describes Amon2::Plugin::Redis version 0.0.1
     Use subsections (=head2, =head3) as appropriate.
 
 
-=head1 INTERFACE 
+=head1 INTERFACE
 
 =for author to fill in:
     Write a separate section listing the public components of the modules
@@ -86,7 +108,7 @@ This document describes Amon2::Plugin::Redis version 0.0.1
     files, and the meaning of any environment variables or properties
     that can be set. These descriptions must also include details of any
     configuration language used.
-  
+
 Amon2::Plugin::Redis requires no configuration files or environment variables.
 
 
