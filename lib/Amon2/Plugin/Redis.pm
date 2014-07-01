@@ -8,15 +8,16 @@ use version; my $VERSION = qv('0.0.3');
 
 sub init {
     my ($class, $context) = @_;
-
     no strict 'refs';
     *{"$context\::redis"} = \&_redis;
 }
 
 sub _redis {
-    my ($self) = @_;
+    my ($self,) = @_;
+
     if (!exists $self->{redis}) {
-        $self->{redis} = Redis->new($self->{redis});
+        $self->{redis} = Redis->new($self->config->{redis})  if $self->config->{redis};
+        $self->{redis} = Redis->new                          unless $self->config->{redis};
     }
     $self->{redis};
 }
