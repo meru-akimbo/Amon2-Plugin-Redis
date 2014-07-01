@@ -4,27 +4,23 @@ use warnings;
 use strict;
 use Carp;
 use Redis;
-use Amon2::Utill;
+use Amon2::Util;
 
-use version; $VERSION = qv('0.0.3');
+use version; my $VERSION = qv('0.0.3');
 
 sub init {
-    my ($self, $c) = @_;
+    my ($class, $context) = @_;
 
-    Amon2::Utill::add_method(
-        $c,
-        'redis',
-        __PACKAGE__->redis($c),
-    );
+    no strict 'refs';
+    *{"$context\::redis"} = \&_redis;
 }
 
-sub redis {
-    my ($class, $c) = @_;
-
-    if (!exists $c->{redis}) {
-        $c->{redis} = Redis->new($c->{redis});
+sub _redis {
+    my ($self) = @_;
+    if (!exists $self->{redis}) {
+        $self->{redis} = Redis->new($self->{redis});
     }
-    $c->{redis};
+    $self->{redis};
 }
 
 
