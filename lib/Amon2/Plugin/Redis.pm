@@ -2,9 +2,7 @@ package Amon2::Plugin::Redis;
 
 use warnings;
 use strict;
-use Carp;
 use Redis;
-use Amon2::Util;
 
 use version; my $VERSION = qv('0.0.3');
 
