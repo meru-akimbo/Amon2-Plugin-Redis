@@ -1,6 +1,6 @@
 # NAME
 
-Amon2::Plugin::Redis
+Amon2::Plugin::Redis - It's new $module
 
 # SYNOPSIS
 
@@ -9,16 +9,17 @@ Amon2::Plugin::Redis
 
     $c->redis->set(test => 'hoge');
 
-# AUTHOR
+# DESCRIPTION
 
-meru_akimbo
-
-# SEE ALSO
-
-[Amon2](http://search.cpan.org/perldoc?Amon2)
-[Redis](http://search.cpan.org/perldoc?Redis)
+Amon2::Plugin::Redis is  for enabling it to treat simply
 
 # LICENSE
 
-Copyright (C) meru_akimbo
+Copyright (C) meru\_akimbo.
 
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+# AUTHOR
+
+meru\_akimbo <merukatoruayu0@gmail.com>
