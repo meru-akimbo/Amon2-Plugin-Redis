@@ -53,5 +53,16 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/meru-akimbo/Amon2-Plugin-Redis/issues"
+      },
+      "homepage" : "https://github.com/meru-akimbo/Amon2-Plugin-Redis",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/meru-akimbo/Amon2-Plugin-Redis.git",
+         "web" : "https://github.com/meru-akimbo/Amon2-Plugin-Redis"
+      }
+   },
    "version" : "0.01"
 }
