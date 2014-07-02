@@ -11,7 +11,7 @@ Amon2::Plugin::Redis
 
 # AUTHOR
 
-meru_akmbo
+meru_akimbo
 
 # SEE ALSO
 
@@ -20,5 +20,5 @@ meru_akmbo
 
 # LICENSE
 
-Copyright (C) meru_akmbo
+Copyright (C) meru_akimbo
 
