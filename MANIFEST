@@ -1,8 +1,19 @@
 .shipit
+_build/auto_features
+_build/build_params
+_build/cleanup
+_build/config_data
+_build/features
+_build/magicnum
+_build/notes
+_build/prereqs
+_build/runtime_params
+blib/lib/Amon2/Plugin/Redis.pm
+blib/libdoc/Amon2::Plugin::Redis.3
+Build
 Build.PL
 Changes
 cpanfile
-cpanfile.snapshot
 lib/Amon2/Plugin/.Redis.pm.swp
 lib/Amon2/Plugin/Redis.pm
 local/bin/amon2-setup.pl
@@ -116,8 +127,6 @@ local/lib/perl5/App/Prove/State.pm
 local/lib/perl5/App/Prove/State/Result.pm
 local/lib/perl5/App/Prove/State/Result/Test.pm
 local/lib/perl5/auto/share/dist/Amon2/flavor/Basic/config/__ENV__.pl
-local/lib/perl5/auto/share/dist/Amon2/flavor/Basic/db/dot.gitignore
-local/lib/perl5/auto/share/dist/Amon2/flavor/Basic/dot.gitignore
 local/lib/perl5/auto/share/dist/Amon2/flavor/Basic/dot.proverc
 local/lib/perl5/auto/share/dist/Amon2/flavor/Basic/lib/__PATH__.pm
 local/lib/perl5/auto/share/dist/Amon2/flavor/Basic/lib/__PATH__/DB.pm
@@ -782,6 +791,7 @@ local/lib/perl5/URI/WithBase.pm
 local/lib/perl5/YAML/Tiny.pm
 Makefile.PL
 MANIFEST			This list of files
+MANIFEST.bak
 README
 README.md
 t/.redis.t.swp
