@@ -2,6 +2,10 @@ Revision history for Perl extension Amon2-Plugin-Redis
 
 {{$NEXT}}
 
+0.02 2014-07-02T13:55:52Z
+
+    - original version
+
 0.01 2014-07-02T13:51:59Z
 
     - original version
