@@ -1,6 +1,6 @@
 # NAME
 
-Amon2::Plugin::Redis - It's new $module
+Amon2::Plugin::Redis - for enabling it to treat simply
 
 # SYNOPSIS
 

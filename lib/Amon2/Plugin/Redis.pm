@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Redis;
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 sub init {
     my ($class, $context) = @_;
@@ -29,7 +29,8 @@ __END__
 
 =head1 NAME
 
-Amon2::Plugin::Redis - It's new $module
+Amon2::Plugin::Redis - for enabling it to treat simply
+
 
 =head1 SYNOPSIS
 
