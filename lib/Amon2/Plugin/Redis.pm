@@ -16,8 +16,7 @@ sub _redis {
     my ($self,) = @_;
 
     if (!exists $self->{redis}) {
-        $self->{redis} = Redis->new($self->config->{redis})  if $self->config->{redis};
-        $self->{redis} = Redis->new                          unless $self->config->{redis};
+        $self->{redis} = Redis->new(%{ $self->config->{Redis} || +{} });
     }
     $self->{redis};
 }
