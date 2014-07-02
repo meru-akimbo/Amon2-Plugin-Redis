@@ -3,5 +3,6 @@ requires 'Redis', '1.9.74';
 
 on 'test' => sub {
     requires 'Test::More', '0.98';
+    requires 'Test::RedisServer', '0.14';
 };
 
