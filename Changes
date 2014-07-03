@@ -2,6 +2,9 @@ Revision history for Perl extension Amon2-Plugin-Redis
 
 {{$NEXT}}
 
+0.04 2014-07-03T04:05:53Z
+    - run scan-prereqs-cpanfile
+
 0.03 2014-07-02T22:35:49Z
     - fix test. When Redis was not started, the test had gone wrong.
 
