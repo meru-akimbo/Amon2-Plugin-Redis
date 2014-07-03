@@ -42,14 +42,16 @@
       },
       "runtime" : {
          "requires" : {
-            "Redis" : "v1.9.74",
+            "Redis" : "0",
             "perl" : "5.008001"
          }
       },
       "test" : {
          "requires" : {
+            "Amon2" : "0",
             "Test::More" : "0.98",
-            "Test::RedisServer" : "0.14"
+            "Test::RedisServer" : "0",
+            "parent" : "0"
          }
       }
    },
