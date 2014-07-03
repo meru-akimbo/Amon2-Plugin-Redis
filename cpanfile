@@ -1,8 +1,13 @@
+requires 'Redis';
 requires 'perl', '5.008001';
-requires 'Redis', '1.9.74';
 
-on 'test' => sub {
-    requires 'Test::More', '0.98';
-    requires 'Test::RedisServer', '0.14';
+on configure => sub {
+    requires 'Module::Build::Tiny', '0.035';
 };
 
+on test => sub {
+    requires 'Amon2';
+    requires 'Test::More', '0.98';
+    requires 'Test::RedisServer';
+    requires 'parent';
+};
